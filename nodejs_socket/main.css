@@ -1,5 +1,5 @@
 div.container {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -7,4 +7,5 @@ div.container {
 nav {
     text-align: center;
     background-color: aquamarine;
+    font-size: x-large;
 }

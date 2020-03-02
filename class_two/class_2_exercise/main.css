@@ -1,15 +1,82 @@
-table {
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #431c5d ;
+}
+.flex-container > a {
+    background-color: #e6e9f0;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+body {
     width: 100%;
+    background-color: #e6e9f0;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+
+}
+p, .form-text{ /* Used same styling for form-text. would it be better
+to do it in a dedicated class/id or different css file?*/
+    color: #e05915;
+    font-size: 18pt;
+}
+h2{
+    color: #431c5d;
+    font-size: 22pt;
+    text-align: center;
+}
+article{
+    border-bottom: dotted;
+    border-color: #431c5d;
+    margin: 10pt;
+}
+button, input[type=submit]{
+    background-color: #cdd422;
+    border: #431c5d;
+    color: #e05915;
+    padding: 15px 32px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px 33%;
+    cursor: pointer;
+    width: 33%;
 }
 
-table > thead > tr > td {
-    text-align: right;
+aside > .column{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+
 }
 
-table td {
+#main-footer{  /**Could not find a solution for footer-- it comes before the columns*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #431c5d;
+    color: #e05915;
     text-align: center;
 }
 
-p {
-    font-size: 1.4em;
+
+input[type=text]{  /*cannot set width to less than 100%
+because form-text is stylized with p*/
+    text-decoration-color: #431c5d;
+    width: 100%;
+    padding: 12px;
+    border: 10pt;
+    background-color: #cdd422;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    resize: vertical;
 }
